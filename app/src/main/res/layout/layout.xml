@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:paddingTop="15dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:outlineAmbientShadowColor="#6f6f6f"
+            android:id="@+id/ImageView"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tveventname"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/ImageView"
+            android:layout_toRightOf="@id/ImageView"
+            android:paddingLeft="5dp"
+            android:textColor="#000"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tveventname2"
+            android:layout_below="@id/tveventname"
+            android:layout_toEndOf="@id/ImageView"
+            android:layout_toRightOf="@id/ImageView"
+            android:paddingLeft="5dp"
+            android:textColor="#6f6f6f"
+            android:textSize="10dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
