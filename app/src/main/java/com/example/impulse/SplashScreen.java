@@ -1,8 +1,12 @@
 package com.example.impulse;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.ImageView;
+
 import android.os.Bundle;
 
 public class SplashScreen extends AppCompatActivity {
@@ -10,22 +14,18 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        try {
-            setContentView(R.layout.activity_splash_screen);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-            new Handler().postDelayed(new Runnable() {
+        setContentView(R.layout.activity_splash_screen);
+        new Handler().postDelayed(new Runnable() {
 
-                @Override
-                public void run() {
-                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
-                    startActivity(intent);
+            @Override
+            public void run() {
+                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                startActivity(intent);
 
-                    finish();
+                finish();
 
-                }
-            }, 3000);
+            }
+        }, 3000);
 
     }
 }
